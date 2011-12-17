@@ -1,0 +1,7 @@
+[user]
+	name = Rafaël Blais Masson
+	email = rafbmasson@gmail.com
+[core]
+	excludesfile = /Users/rafbm/.gitignore_global
+[color]
+	ui = true
