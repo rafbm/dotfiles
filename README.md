@@ -1,1 +1,1 @@
-<img src="http://f.cl.ly/items/1j2W3h423k3T0K0I153K/prompt.png">
+<img src="http://f.cl.ly/items/0f1D34453y1V1F342v37/prompt.png">
