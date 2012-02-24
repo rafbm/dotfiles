@@ -5,3 +5,8 @@
 	excludesfile = /Users/rafbm/.gitignore_global
 [color]
 	ui = true
+[alias]
+	unstage  = reset HEAD           # unstage
+	clear    = reset --hard HEAD    # erase uncommited file edits (destructive!)
+	uncommit = reset HEAD~1         # erase last commit but keeps related file edits
+	rollback = reset --hard HEAD~1  # erase last commit and related file edits (destructive!)
