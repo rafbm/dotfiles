@@ -60,7 +60,7 @@ setopt prompt_subst
 local percent="%(?,%{$fg[green]%}%#%{$reset_color%},%{$fg[red]%}%#%{$reset_color%})"
 
 PROMPT='
-%F{135}%~%{$reset_color%}  $(git-status.rb)
+%F{135}%~%{$reset_color%}  $(git-prompt.rb)
 ${percent} %{$reset_color%}'
 
 RPROMPT='%F{16}$(date)%{$reset_color%}'
