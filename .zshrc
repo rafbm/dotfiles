@@ -9,6 +9,7 @@ export PATH="/usr/local/bin:$PATH"
 
 # Ruby
 export PATH="/usr/local/ruby/1.9.2-p290/bin:$PATH"
+# export PATH="/usr/local/ruby/ree-1.8.7-2011.03/bin:$PATH"
 
 # Python
 export PATH="/usr/local/share/python:$PATH"
