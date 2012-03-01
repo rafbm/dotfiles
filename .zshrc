@@ -46,6 +46,10 @@ alias gpull="git pull --rebase origin"
 alias gpush="git push origin"
 alias gstash="git stash save"
 alias gpop="git stash pop"
+alias gsub="git submodule"
+alias gsuba="git submodule add"
+alias gsubi="git submodule init"
+alias gsubu="git submodule update"
 
 
 # ========== #
