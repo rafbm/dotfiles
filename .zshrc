@@ -27,10 +27,20 @@ export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 # =========== #
 
 alias reload="source ~/.zshrc"
+alias config="mate ~/.zshrc"
+alias setup="mate -w ~/.zshrc && reload"
+
+alias back='cd $OLDPWD'
+
 alias m.="mate ."
 alias o.="open ."
+
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles true && killall Finder"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles false && killall Finder"
+
+alias be='bundle exec ' # note the trailing space to trigger chaining
+alias mongod_="mongod --dbpath /usr/local/var/mongodb/data/db"
+
 
 # Git
 alias gti="git" # shame
@@ -46,6 +56,7 @@ alias gpull="git pull --rebase origin"
 alias gpush="git push origin"
 alias gstash="git stash save"
 alias gpop="git stash pop"
+alias gclean="git clean -fd"
 alias gsub="git submodule"
 alias gsuba="git submodule add"
 alias gsubi="git submodule init"
