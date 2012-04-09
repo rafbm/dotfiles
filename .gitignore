@@ -4,3 +4,5 @@
 .zcompdump
 .irb_history
 .rdebug_hist
+.psql_history
+.showoffrc
