@@ -96,6 +96,9 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history # share command history data
 
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
+
 # Completions for Ruby, Git, etc.
 autoload compinit
 compinit
