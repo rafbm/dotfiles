@@ -64,8 +64,12 @@ untracked_count = _working_tree.count { |x| x == '?' }
 untracked_prompt = "#{untracked_count} untracked"
 
 
+stash_count = `git stash list`.chomp.split("\n").size
+
+
 prompt = "%F{81}" + `git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'`.chomp
 prompt += rebasing_etc
+prompt += " %F{8}(#{stash_count} stash#{'es' if stash_count > 1})" if stash_count > 0
 prompt += " %F{118}(#{staged_prompt})" if staged_count > 0
 prompt += " %F{166}(#{unstaged_prompt})" if unstaged_count > 0
 prompt += " %F{161}(#{untracked_prompt})" if untracked_count > 0
