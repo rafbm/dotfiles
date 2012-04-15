@@ -32,6 +32,7 @@ alias config="mate ~/.zshrc"
 alias setup="mate -w ~/.zshrc && reload"
 
 alias back='cd $OLDPWD'
+alias ip='echo -n `ifconfig | grep -Po "(?<=inet )\d*\.\d*\.\d*\.\d*(?=.*broadcast)"` | pbcopy'
 
 alias m.="mate ."
 alias o.="open ."
