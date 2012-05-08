@@ -97,8 +97,13 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history # share command history data
 
-bindkey '^[[A' up-line-or-search
-bindkey '^[[B' down-line-or-search
+# Fuck yes, at last. This is what the default behavior of ⬆ and ⬇ should be.
+# Seen at http://cims.nyu.edu/cgi-systems/info2html?(zsh)ZLE%2520Functions and http://dotfiles.org/~urukrama/.zshrc
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey '^[[A' history-beginning-search-backward-end
+bindkey '^[[B' history-beginning-search-forward-end
 
 # Completions for Ruby, Git, etc.
 autoload compinit
