@@ -65,6 +65,13 @@ alias gsubi="git submodule init"
 alias gsubu="git submodule update"
 
 
+# Curl
+get() {
+  curl -D /tmp/fuckin-curl-headers.txt $1
+  echo "\n"
+  cat /tmp/fuckin-curl-headers.txt
+}
+
 # ========== #
 #   Prompt   #
 # ========== #
