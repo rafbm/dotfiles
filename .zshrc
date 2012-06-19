@@ -47,7 +47,8 @@ alias mongod_="mongod --dbpath /usr/local/var/mongodb/data/db"
 # Git
 alias gti="git" # shame
 
-alias glog="git log --pretty=format:'%C(yellow)%h%C(reset)%C(bold red)%d%C(reset) %s %C(green)(%cr) %C(cyan)<%an>%C(reset)' --abbrev-commit"
+alias _glog="git log --pretty=format:'%C(yellow)%h%C(reset)%C(bold red)%d%C(reset) %s %C(green)(%cr) %C(cyan)<%an>%C(reset)' --abbrev-commit"
+alias glog="_glog -n 30 | ruby -e 'puts STDIN.read.gsub(%(<#{%x(git config user.name).chomp}>), %())'"
 alias gstatus="git status -sbu"
 alias gdiff="git diff"
 alias gadd="git add -p"
