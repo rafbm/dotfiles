@@ -47,7 +47,7 @@ alias mongod_="mongod --dbpath /usr/local/var/mongodb/data/db"
 # Git
 alias gti="git" # shame
 
-alias glog="git log --oneline --decorate"
+alias glog="git log --pretty=format:'%C(yellow)%h%C(reset)%C(bold red)%d%C(reset) %s %C(green)(%cr) %C(cyan)<%an>%C(reset)' --abbrev-commit"
 alias gstatus="git status -sbu"
 alias gdiff="git diff"
 alias gadd="git add -p"
