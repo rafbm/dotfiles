@@ -40,7 +40,9 @@ alias o.="open ."
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles true && killall Finder"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles false && killall Finder"
 
+alias bi='bundle install'
 alias be='bundle exec ' # note the trailing space to trigger chaining
+alias bu='bundle update '
 alias mongod_="mongod --dbpath /usr/local/var/mongodb/data/db"
 
 
