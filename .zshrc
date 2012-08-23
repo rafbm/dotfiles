@@ -31,6 +31,9 @@ alias reload="source ~/.zshrc"
 alias config="mate ~/.zshrc"
 alias setup="mate -w ~/.zshrc && reload"
 
+# http://twitter.com/michaelvillar/status/228991454461194240
+alias webserver="python -m SimpleHTTPServer"
+
 alias back='cd $OLDPWD'
 alias ip='echo -n `ifconfig | grep -Po "(?<=inet )\d*\.\d*\.\d*\.\d*(?=.*broadcast)"` | pbcopy'
 
