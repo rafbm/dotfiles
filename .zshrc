@@ -13,16 +13,16 @@ export PATH="/usr/local/ruby/1.9.3-p327/bin:$PATH"
 # export PATH="/usr/local/ruby/1.9.2-p290/bin:$PATH"
 # export PATH="/usr/local/ruby/ree-1.8.7-2011.03/bin:$PATH"
 
+# Node
+export PATH="/usr/local/share/npm/bin:$PATH"
+export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+
 # Python
 export PATH="/usr/local/share/python:$PATH"
 # export PATH="/usr/local/share/python3:$PATH"
 
 # Custom
 export PATH="$HOME/bin:$PATH"
-
-# Node
-export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
-
 
 # =========== #
 #   Aliases   #
