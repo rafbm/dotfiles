@@ -8,7 +8,8 @@ export EDITOR="mate -w"
 export PATH="/usr/local/bin:$PATH"
 
 # Ruby
-export PATH="/usr/local/ruby/1.9.3-p194/bin:$PATH"
+export PATH="/usr/local/ruby/1.9.3-p327/bin:$PATH"
+# export PATH="/usr/local/ruby/1.9.3-p286/bin:$PATH"
 # export PATH="/usr/local/ruby/1.9.2-p290/bin:$PATH"
 # export PATH="/usr/local/ruby/ree-1.8.7-2011.03/bin:$PATH"
 
