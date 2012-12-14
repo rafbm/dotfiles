@@ -21,6 +21,9 @@ export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 export PATH="/usr/local/share/python:$PATH"
 # export PATH="/usr/local/share/python3:$PATH"
 
+# Heroku
+export PATH="/usr/local/heroku/bin:$PATH"
+
 # Custom
 export PATH="$HOME/bin:$PATH"
 
