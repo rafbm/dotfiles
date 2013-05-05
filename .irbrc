@@ -1,6 +1,5 @@
 # https://github.com/michaeldv/awesome_print#irb-integration
 
-require "rubygems"
 require "awesome_print"
 AwesomePrint.irb!
 
