@@ -65,6 +65,10 @@ alias gpull="git pull --rebase origin"
 alias gpush="git push origin"
 alias gstash="git stash save -u"
 alias gpop="git stash pop"
+alias gsl="git stash list"
+gss() { git stash show -u stash@{$1} }
+gsp() { git stash pop stash@{$1} }
+gsd() { git stash drop stash@{$1} }
 alias gclean="git clean -fd"
 alias gsub="git submodule"
 alias gsuba="git submodule add"
