@@ -24,6 +24,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Custom
 export PATH="$HOME/bin:$PATH"
 
+
 # =========== #
 #   Aliases   #
 # =========== #
@@ -82,6 +83,13 @@ get() {
   echo "\n"
   cat /tmp/fuckin-curl-headers.txt
 }
+
+
+# =========== #
+#  Functions  #
+# =========== #
+ipfwd() { sudo ipfw add 100 fwd 127.0.0.1,$1 tcp from any to me $2 }
+
 
 # ========== #
 #   Prompt   #
