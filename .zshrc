@@ -52,8 +52,8 @@ alias bu='bundle update '
 # Git
 alias gti="git" # shame
 
-alias _glog="git log --pretty=format:'%C(yellow)%h%C(reset)%C(bold red)%d%C(reset) %s %C(green)(%cr) %C(cyan)<%an>%C(reset)' --abbrev-commit --all"
-alias glog="_glog -n 35 | ruby -e 'puts STDIN.read.gsub(%(<#{%x(git config user.name).chomp}>), %())'"
+alias glog="git log --oneline --decorate --branches --remotes --tags -n 35"
+alias gloga="glog --pretty=format:'%C(yellow)%h%C(reset)%C(bold red)%d%C(reset) %s %C(green)(%cr) %C(cyan)<%an>%C(reset)' | ruby -e 'puts STDIN.read.gsub(%(<#{%x(git config user.name).chomp}>), %())'"
 alias gstatus="git status -sbu"
 alias gdiff="git diff"
 alias gadd="git add -p"
