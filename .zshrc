@@ -48,8 +48,6 @@ alias hidehidden="defaults write com.apple.finder AppleShowAllFiles false && kil
 alias bi='bundle install'
 alias be='bundle exec ' # note the trailing space to trigger chaining
 alias bu='bundle update '
-alias mongod_="mongod --dbpath /usr/local/var/mongodb/data/db"
-
 
 # Git
 alias gti="git" # shame
