@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/ruby
 
 # Much stuff stolen from https://github.com/topfunky/zsh-simple
 
