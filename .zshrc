@@ -76,6 +76,12 @@ alias gsubu="git submodule update"
 alias gmerge="git merge --no-ff"
 alias gpick="git cherry-pick"
 
+# Heroku
+alias hconfig="heroku config"
+alias hlogs="heroku logs"
+alias hps="heroku ps"
+alias hrun="heroku run"
+
 # Curl
 get() {
   curl -D /tmp/fuckin-curl-headers.txt $1
