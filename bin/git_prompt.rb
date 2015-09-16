@@ -40,6 +40,7 @@ stage = {
   :added    => _stage.count { |x| x == 'A' },
   :deleted  => _stage.count { |x| x == 'D' },
   :renamed  => _stage.count { |x| x == 'R' },
+  :copied   => _stage.count { |x| x == 'C' },
 }
 working_tree = {
   :modified => _working_tree.count { |x| x == 'M' },
